@@ -15,7 +15,6 @@ var Map = React.createClass({
                     javaScriptEnabled = {true}
                     geolocationEnabled = {true}
                     builtInZoomControls = {false}
-                    onNavigationStateChange = {this.onNavigationStateChange}
                     url = {"http://sendr-maps-dev.eu-west-1.elasticbeanstalk.com/#/me"}
                     style = {styles.containerWebView}/>
         );

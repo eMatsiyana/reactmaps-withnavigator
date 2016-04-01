@@ -28,9 +28,6 @@ var MapTest = React.createClass({
       case 'Map1':
         Scene = this.renderMap1();
         break;
-      case 'Map2':
-        Scene = this.renderMap2();
-        break;
       default:
         Scene = this.noRoute(navigator);
         break;
@@ -39,13 +36,17 @@ var MapTest = React.createClass({
   },
 
   render:function() {
-    return <Navigator
-            initialRoute={{id:'Map1'}}
-            renderScene={this.renderScene}/>;
+
+    //Return the following instead to ignore using the navigator 
+    return <Map1/>;
+
+   //return <Navigator
+    //        initialRoute={{id:'Map1'}}
+    //        renderScene={this.renderScene}/>;
   },
 
   noRoute: function(navigator) {
-    return <View> <Text> No route here </Text></View>;
+    return <View><Text>{'No route here'}</Text></View>;
   }
 
 });
