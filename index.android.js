@@ -38,11 +38,11 @@ var MapTest = React.createClass({
   render:function() {
 
     //Return the following instead to ignore using the navigator 
-    return <Map1/>;
+    //return <Map1/>;
 
-   //return <Navigator
-    //        initialRoute={{id:'Map1'}}
-    //        renderScene={this.renderScene}/>;
+    return <Navigator
+            initialRoute={{id:'Map1'}}
+            renderScene={this.renderScene}/>;
   },
 
   noRoute: function(navigator) {
